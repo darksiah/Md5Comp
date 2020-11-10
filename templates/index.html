@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+  <head>
+  <script src="static/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="static/js/jquery-ui.js"></script>
+  <link href="static/css/jquery-ui.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="static/js/tabulator.min.js"></script>
+  <link href="static/css/tabulator.min.css" rel="stylesheet">
+  <style>
+    body {
+    background-image: url('static/img/insp.jpg');
+    background-color: black;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    }
+
+    h1 {
+    text-align: center;
+    }
+
+    div#filtro {
+    padding-bottom: 50px;
+    }
+    div#example-table {
+    padding: 0px;
+    }
+    .resRadio
+    {
+      display: block;
+    }
+    div#radioFiltrores
+    {
+    padding-top: 10px;
+    }
+
+  </style>
+  </head>
+  <body>
+  <h1>Comparador MD5</h1>
+  <div id="filtro">
+  <input id="filter-value" type="text" placeholder="Valor Buscado">
+
+  <select id="filter-field">
+    <option value="ARCHIVO">Archivo</option>
+    <option value="RESBUS">Resultado</option>
+    <option value="MD5ORI">MD5ORI</option>
+    <option value="MD5DEST">MD5DEST</option>
+    <option value="TIPOARCH">TIPOARCH</option>
+    <option></option>
+  </select>
+
+  <select id="filter-type">
+    <option value="like">like</option>
+    <option value="=">=</option>
+    <option value="<"><</option>
+    <option value="<="><=</option>
+    <option value=">">></option>
+    <option value=">=">>=</option>
+    <option value="!=">!=</option>
+  </select>
+
+    <button id="filter-clear" type="button">Limpiar</button>
+
+    <div id="radioFiltrores">
+    <label class="resRadio">MD5OK<input type="radio" id="filxresOK" name="filtrxres" value="MD5OK"></label>
+    <label class="resRadio">MD5DIF<input type="radio" id="filxresDIF" name="filtrxres" value="MD5DIF"></label>
+    <label class="resRadio">NOENC<input type="radio" id="filxresNE" name="filtrxres" value="NOENC"></label>
+    <label class="resRadio">TODOS<input type="radio" id="filxresTOD" name="filtrxres" value="TODOS" checked></label>
+    </div>
+
+
+  </div>
+  <div id="example-table"</div>
+
+  <script type="text/javascript" src="static/js/mati.js"></script>
+  </body>
+</html>
